@@ -41,12 +41,9 @@
                   <!---->
                   <!-- This is what your users will see when the form-->
                   <!-- has successfully submitted-->
-                  <div class="d-none" id="submitSuccessMessage">
+                  <div *ngIf="success" id="submitSuccessMessage">
                       <div class="text-center mb-3">
-                          <div class="fw-bolder">Form submission successful!</div>
-                          To activate this form, sign up at
-                          <br />
-                          <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                          <div class="fw-bolder">Su mensaje ha sido enviado correctamente!</div>
                       </div>
                   </div>
                   <!-- Submit error message-->
